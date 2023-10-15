@@ -2184,20 +2184,22 @@ input, select, textarea {
 		-webkit-align-items: -webkit-stretch;
 		-ms-align-items: -ms-stretch;
 		align-items: stretch;
-		height: 100%;
+	  height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
-		margin-bottom: 20px;
+		margin: 20px;
+		border-radius: 20px
 	}
 
-		.panel > * {
-			position: relative;
-			min-width: 10rem;
-		}
+	.panel > * {
+	    position: relative;
+	    min-width: 10rem;
+	}
 
 		.panel > *.color0 {
 		    background-image: url("../../images/overlay.png"), linear-gradient(45deg, #3a7bd5 20%, #00d2ff 60%, #ffe4b4);
 		    background-size: 128px 128px, auto;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 				animation: colorShift 10s infinite alternate; /* Adjust the duration and timing as needed */
 		    transition: background 2s ease; /* Smooth transition between colors */
 		}
@@ -3584,7 +3586,6 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		height: 32rem;
-		box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
 	}
 
 		#wrapper > .scrollZone {
