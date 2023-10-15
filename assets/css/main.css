@@ -2199,7 +2199,6 @@ input, select, textarea {
 		.panel > *.color0 {
 		    background-image: url("../../images/overlay.png"), linear-gradient(45deg, #3a7bd5 20%, #00d2ff 60%, #ffe4b4);
 		    background-size: 128px 128px, auto;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 				animation: colorShift 10s infinite alternate; /* Adjust the duration and timing as needed */
 		    transition: background 2s ease; /* Smooth transition between colors */
 		}
