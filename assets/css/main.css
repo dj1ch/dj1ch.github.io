@@ -2187,6 +2187,7 @@ input, select, textarea {
 		height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
+		margin-bottom: : 20px;
 	}
 
 		.panel > * {
