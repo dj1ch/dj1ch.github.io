@@ -2194,10 +2194,23 @@ input, select, textarea {
 			min-width: 10rem;
 		}
 
-			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
-				background-size: 128px 128px, auto;
-			}
+		.panel > *.color0 {
+		    background-image: url("../../images/overlay.png"), linear-gradient(45deg, #3a7bd5 20%, #00d2ff 60%, #ffe4b4);
+		    background-size: 128px 128px, auto;
+				animation: colorShift 10s infinite alternate; /* Adjust the duration and timing as needed */
+		    transition: background 2s ease; /* Smooth transition between colors */
+		}
+
+		@keyframes colorShift {
+		    0% {
+		        background-position: 0 0; /* Start position */
+		        background-color: #4FC3F7; /* Initial color */
+		    }
+		    100% {
+		        background-position: 100% 100%; /* End position */
+		        background-color: #ffe4b4; /* Final color */
+		    }
+		}
 
 			.panel > *.color1 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
@@ -2207,9 +2220,9 @@ input, select, textarea {
 
 			.panel > *.color2 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
-			}
+		    background-size: 128px 128px, auto;
+		    background-color: #7CE37B; /* Greenish shade */
+		}
 
 			.panel > *.color3 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
@@ -2717,9 +2730,9 @@ input, select, textarea {
 		}
 
 		.panel.color1 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-			background-size: 128px 128px, auto;
-			background-color: #726193;
+		    background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+		    background-size: 128px 128px, auto;
+		    background-color: #FF6F61; /* Coral color */
 		}
 
 		.panel.color2 {
