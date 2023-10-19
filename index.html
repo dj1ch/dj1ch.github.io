@@ -121,6 +121,15 @@
 												<div class="field">
 													<label for="message">Message</label>
 													<textarea name="content" id="message" rows="4"></textarea>
+													<script>
+														var messageUpdated = false;
+															document.getElementById('message').addEventListener('input', function () {
+																if (!messageUpdated) {
+																	this.value = `Name: ${document.getElementById('name').value}\nEmail: ${document.getElementById('email').value}\n\n${this.value}`;
+																	messageUpdated = true;
+																}
+															});
+            							</script>
 												</div>
 											</div>
 											<ul class="actions">
