@@ -3625,7 +3625,7 @@ input, select, textarea {
 			bottom: -3rem;
 			right: 0;
 			font-size: 0.8rem;
-			color: rgba(46, 43, 55, 0.375);
+			color: rgba(46, 43, 55, 0.75);
 			margin-bottom: 0;
 		}
 
