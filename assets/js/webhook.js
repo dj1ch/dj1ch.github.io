@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Construct the message with bold labels
         const content = `**Name:** ${name}\n**Email:** ${email}\n\n**Message:**\n${messageText}`;
 
-        // Log the message to the console (for testing)
-        console.log('Content:', content);
-
         // Send data to Discord using a webhook
         const discordWebhookURL = 'https://discord.com/api/webhooks/1164589281772310588/--yzEwJ8ydf0WYENe9sQ-mgBr3q8do5a4ddUKXNPo7rjUUzsrvqo61c9CJlA24erP9N2';
         fetch(discordWebhookURL, {
