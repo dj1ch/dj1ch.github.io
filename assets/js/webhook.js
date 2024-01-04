@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const email = document.getElementById('email').value;
         const messageText = document.getElementById('message').value;
 
+        // Validate form fields
+        if (!name || !email || !messageText) {
+            alert('Please fill in all the required fields.');
+            return;
+        }
+
         // Construct the message with bold labels
         const content = `**Name:** ${name}\n**Email:** ${email}\n\n**Message:**\n${messageText}`;
 
