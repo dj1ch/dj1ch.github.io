@@ -7,6 +7,7 @@ main {
     font-size: 20px;
     line-height: 1.6;
 }
+
 .astro-a {
     position: absolute;
     top: -32px;
@@ -16,13 +17,23 @@ main {
     height: auto;
     z-index: -1;
 }
-h1, h3 {
-    font-size: 7rem;
+
+h1 {
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
 }
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -30,6 +41,7 @@ h1, h3 {
     background-size: 400%;
     background-position: 0%;
 }
+
 .instructions {
     margin-bottom: 2rem;
     border: 1px solid rgba(var(--accent-light), 25%);
@@ -37,6 +49,7 @@ h1, h3 {
     padding: 1.5rem;
     border-radius: 8px;
 }
+
 .instructions code {
     font-size: 0.8em;
     font-weight: bold;
@@ -45,19 +58,67 @@ h1, h3 {
     border-radius: 4px;
     padding: 0.3em 0.4em;
 }
+
 .instructions strong {
     color: rgb(var(--accent-light));
 }
+
 .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
 }
+
 .fade-in-text {
     animation: fadeIn 3s;
 }
+
 @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
+
+.big-text {
+    font-size: 25px;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+}
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.hidden {
+    display: none;
+  }

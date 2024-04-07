@@ -1,37 +1,58 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import "../styles/global.css";
+import MenuBar from '../components/MenuBar.astro';
 ---
 
 <Layout title="dj1ch | Portfolio">
 	<main>
+		<MenuBar />
 		<div class="fade-in-text">
 			<h1>Welcome to my <span class="text-gradient">Portfolio</span></h1>
-			<p align="center">I'm Isaac, a developer with a passion for Embedded systems and Frontend Web Development.</p>
+			<p align="center" class="big-text">I'm Isaac, a developer with a passion for Cybersecurity, Embedded systems, and frontend web development.</p>
+			<h3 align="center">Projects: </h3>
+			<ul role="list" class="link-card-grid">
+				<Card
+					href="https://github.com/Pwnagotchi-Unofficial/minigotchi"
+					title="minigotchi"
+					body="An even smaller pwnagotchi. Participated in Hacktoberfest 2023"
+				/>
+				<Card
+					href="https://github.com/dj1ch/pico-key"
+					title="pico-key"
+					body="A physical pentesting toolkit on a regular Raspberry Pi Pico."
+				/>
+				<Card
+					href="https://github.com/eupnea-project/eupnea-project.github.io"
+					title="eupnea-project.github.io"
+					body="The Eupnea Project website and docs."
+				/>
+				<Card
+					href="https://github.com/dj1ch/mr-kushi-website-but-better"
+					title="mr-kushi-website-but-better"
+					body="A better website for my geometry class."
+				/>
+				<Card
+					href="https://github.com/dj1ch/wiki"
+					title="wiki"
+					body="The ravynOS Wiki."
+				/>
+				<Card
+					href="https://github.com/dj1ch/docs"
+					title="docs"
+					body="Centralized project documentation for chrultrabook"
+				/>
+				<Card 
+					href="https://github.com/dj1ch/pico-honeypot"
+					title="pico-honeypot"
+					body="A raspberry pi pico honeypot, that pretends to be a linux server."
+				/>
+				<Card 
+					href="https://github.com/dj1ch/skid-attack"
+					title="skid-attack"
+					body="A script that will ruin a skid's life."
+				/>
+			</ul>
 		</div>
-		<h3 align="center">Projects: </h3>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://github.com/Pwnagotchi-Unofficial/minigotchi"
-				title="minigotchi"
-				body="An even smaller pwnagotchi."
-			/>
-			<Card
-				href="https://github.com/dj1ch/pico-key"
-				title="pico-key"
-				body="A physical pentesting toolkit on a regular Raspberry Pi Pico."
-			/>
-			<Card
-				href="https://github.com/eupnea-project/eupnea-project.github.io"
-				title="eupnea-project.github.io"
-				body="The Eupnea Project website and docs."
-			/>
-			<Card
-				href="https://github.com/dj1ch/mr-kushi-website-but-better"
-				title="mr-kushi-website-but-better"
-				body="A better website for my geometry class."
-			/>
-		</ul>
 	</main>
 </Layout> 
