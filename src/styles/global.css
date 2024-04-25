@@ -152,3 +152,7 @@ button:hover {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
+
+p {
+    font-size: 18px;
+}
