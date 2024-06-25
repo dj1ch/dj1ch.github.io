@@ -3,16 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "~/*": [
-        "./src/*"
-      ]
+      "~/*": ["./src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
