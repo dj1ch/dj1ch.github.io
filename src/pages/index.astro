@@ -1,50 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import MenuBar from '../components/MenuBar.astro';
+import MainLayout from "~/layouts/MainLayout.astro";
+
+import { Separator } from "~/components/ui";
+
+import About from "~/components/About.tsx";
+import Projects from "~/components/Projects.tsx";
+import Socials from "~/components/Socials.tsx";
+import DevelopedBy from "~/components/DevelopedBy.tsx";
 ---
 
-<Layout title="dj1ch | Portfolio">
-	<main>
-		<div class="fade-in-text">
-			<MenuBar/>
-			<h1>Welcome to my <span class="text-gradient">Portfolio</span></h1>
-			<p align="center" class="big-text">I'm Isaac, a developer with a passion for Cybersecurity, Embedded systems, and frontend web development.</p>
-			<h3 align="center">Projects: </h3>
-			<div class="card-container">
-				<ul role="list" class="link-card-grid">
-					<Card
-						href="https://github.com/Pwnagotchi-Unofficial/minigotchi"
-						title="minigotchi"
-						body="An even smaller pwnagotchi. Participated in Hacktoberfest 2023"
-					/>
-					<Card
-						href="https://github.com/Pwnagotchi-Unofficial/minigotchi-ESP32"
-						title="minigotchi-ESP32"
-						body="Minigotchi ported to the ESP32."
-					/>
-					<Card 
-						href="https://github.com/Pwnagotchi-Unofficial/docker-pwnagotchi"
-						title="docker-pwnagotchi"
-						body="Pwnagotchi on Docker with updated dependencies."
-					/>
-					<Card
-						href="https://github.com/dj1ch/pico-key"
-						title="pico-key"
-						body="A physical pentesting toolkit on a regular Raspberry Pi Pico."
-					/>
-					<Card
-						href="https://github.com/dj1ch/nixos-chromebook"
-						title="nixos-chromebook"
-						body="A post-install guide to installing NixOS on a chromebook."
-					/>
-					<Card 
-						href="https://github.com/dj1ch/pico-honeypot"
-						title="pico-honeypot"
-						body="A raspberry pi pico honeypot, that pretends to be a linux server."
-					/>
-				</ul>
-			</div>
-		</div>
-	</main>
-</Layout> 
+<MainLayout>
+  <main class="container p-3 mx-auto max-w-screen-sm min-h-dvh">
+    <About client:idle />
+
+    <Separator className="my-8" />
+
+    <Projects client:idle />
+
+    <div class="h-10"></div>
+
+    <div class="h-10"></div>
+
+    <Socials client:idle />
+
+    <Separator className="my-8" />
+
+    <DevelopedBy />
+  </main>
+</MainLayout>
