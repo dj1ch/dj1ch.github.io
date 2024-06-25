@@ -28,10 +28,10 @@ jobs:
       - name: Build your site
         run: pnpm run build
       
-      - name: Upload artifact
+      - name: Upload build output
         uses: actions/upload-artifact@v3
         with:
-          name: site
+          name: site-artifact
           path: dist  # replace with your build output directory if different
 
   deploy:
@@ -41,10 +41,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download artifact
+      - name: Download build output
         uses: actions/download-artifact@v3
         with:
-          name: site
+          name: site-artifact
           path: dist
 
       - name: Deploy to GitHub Pages
