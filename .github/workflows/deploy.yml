@@ -31,7 +31,7 @@ jobs:
       - name: Upload build output
         uses: actions/upload-artifact@v3
         with:
-          name: site-artifact
+          name: github-pages
           path: dist  # replace with your build output directory if different
 
   deploy:
@@ -44,11 +44,11 @@ jobs:
       - name: Download build output
         uses: actions/download-artifact@v3
         with:
-          name: site-artifact
+          name: github-pages
           path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          folder: dist  # replace with your build output directory if different
+          artifact_name: github-pages
