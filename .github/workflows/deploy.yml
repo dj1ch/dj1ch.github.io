@@ -27,7 +27,10 @@ jobs:
 
       - name: Build your site
         run: pnpm run build
-      
+
+      - name: List files in dist directory
+        run: ls -la dist
+
       - name: Upload build output
         uses: actions/upload-artifact@v3
         with:
@@ -45,6 +48,9 @@ jobs:
         with:
           name: github-pages
           path: ./dist
+
+      - name: List files in downloaded dist directory
+        run: ls -la dist
 
       - name: Deploy to GitHub Pages
         id: deployment
