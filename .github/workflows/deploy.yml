@@ -32,10 +32,18 @@ jobs:
         run: ls -la dist
 
       - name: Check for symlinks in dist directory
-        run: find dist -type l
+        run: find dist -type l || true
 
       - name: Check size of dist directory
         run: du -sh dist
+
+      - name: Remove symlinks and hard links
+        run: |
+          find dist -type l -exec rm {} \;
+          find dist -type l -exec cp -P {} {}_copy \; -exec mv {}_copy {} \;
+
+      - name: List files in dist directory after cleanup
+        run: ls -la dist
 
       - name: Upload build output
         uses: actions/upload-artifact@v4
