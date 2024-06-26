@@ -17,32 +17,18 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v2.2.4
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v2
         with:
-          version: 8.6.0  # specify the version of pnpm you need
+          node-version: '14'
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build your site
-        run: pnpm run build
+        run: npm run build
 
       - name: List files in dist directory
-        run: ls -la dist
-
-      - name: Check for symlinks in dist directory
-        run: find dist -type l || true
-
-      - name: Check size of dist directory
-        run: du -sh dist
-
-      - name: Remove symlinks and hard links
-        run: |
-          find dist -type l -exec rm {} \;
-          find dist -type l -exec cp -P {} {}_copy \; -exec mv {}_copy {} \;
-
-      - name: List files in dist directory after cleanup
         run: ls -la dist
 
       - name: Upload build output
