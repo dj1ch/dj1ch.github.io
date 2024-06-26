@@ -35,7 +35,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: dist  # replace with your build output directory if different
+          path: dist
+
+      - name: Confirm upload
+        run: echo "Artifact uploaded successfully"
 
   deploy:
     needs: build
@@ -47,10 +50,13 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: github-pages
-          path: ./dist
+          path: dist
 
       - name: List files in downloaded dist directory
         run: ls -la dist
+
+      - name: List files in root directory
+        run: ls -la
 
       - name: Deploy to GitHub Pages
         id: deployment
