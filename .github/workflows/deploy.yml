@@ -31,6 +31,12 @@ jobs:
       - name: List files in dist directory
         run: ls -la dist
 
+      - name: Check for symlinks in dist directory
+        run: find dist -type l
+
+      - name: Check size of dist directory
+        run: du -sh dist
+
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
