@@ -5,22 +5,34 @@ import { Lucide } from "./icons";
 // TODO : update projects
 const projects = [
   {
-    title: "Minigotchi",
-    description: "An even smaller Pwnagotchi",
+    title: "minigotchi",
+    description: "An even smaller Pwnagotchi. Participated in Hacktoberfest 2023",
     icon: Lucide.IconImage,
     url: "https://github.com/dj1ch/minigotchi",
   },
   {
-    title: "Minigotchi-ESP32",
+    title: "minigotchi-ESP32",
     description: "Minigotchi ported to the ESP32",
     icon: Lucide.IconImage,
     url: "https://github.com/dj1ch/minigotchi-esp32",
   },
   {
-    title: "Pico-key",
+    title: "docker-pwnagotchi",
+    description: "Pwnagotchi on Docker with updated dependencies.",
+    icon: Lucide.IconImage,
+    url: "https://github.com/Pwnagotchi-Unofficial/docker-pwnagotchi",
+  },
+  {
+    title: "pico-key",
     description: "A physical pentesting toolkit on a (regular) Raspberry Pi Pico",
     icon: Lucide.IconImage,
     url: "https://github.com/dj1ch/pico-key",
+  },
+  {
+    title: "pico-honeypot",
+    description: "A Raspberry Pi Pico honeypot that pretends to be a linux server.",
+    icon: Lucide.IconImage,
+    url: "https://github.com/dj1ch/pico-honeypot",
   },
 ];
 
