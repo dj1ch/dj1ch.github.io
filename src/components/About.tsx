@@ -13,12 +13,12 @@ export default () => {
 
         <div className="flex flex-col items-start gap-2">
           <h1 className="font-medium text-lg lg:text-xl">dj1ch</h1>
-          <h2 className="font-medium text-2xl lg:text-3xl">Embedded Developer</h2>
+          <h2 className="font-medium text-2xl lg:text-3xl">Embedded Developer/Student</h2>
         </div>
       </div>
 
       <div>
-        I'm a high school student with a passion for computer science, martial arts, and productivity. I consider myself a polymath.
+        I'm a high school student with a passion for computer science, electrical engineering, martial arts, and productivity. I consider myself a polymath.
       </div>
     </div>
   );
