@@ -18,7 +18,7 @@ export default () => {
       </div>
 
       <div>
-        I am a self-taught developer in the Embedded Stack, working on projects putting an emphasis on the functions of a microcontroller, along with cybersecurity among other things.
+        I'm a high school student with a passion for computer science, martial arts, and productivity. I consider myself a polymath.
       </div>
     </div>
   );
