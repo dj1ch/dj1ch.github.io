@@ -29,6 +29,12 @@ const projects = [
     url: "https://github.com/dj1ch/openhaystack-esp32",
   },
   {
+    title: "esp32_nat_router_plus",
+    description: "A simple NAT Router for the ESP32 with support for ESP-IDF 5.3.0",
+    icon: Lucide.IconImage,
+    url: "https://github.com/dj1ch/esp32_nat_router_plus",
+  },
+  {
     title: "docker-pwnagotchi",
     description: "Pwnagotchi on Docker with updated dependencies.",
     icon: Lucide.IconImage,
