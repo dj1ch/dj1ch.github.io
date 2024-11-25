@@ -18,6 +18,16 @@ const socials = [
     name: "Daily.dev",
     icon: Simple.IconDailyDev,
   },
+  {
+    href: "https://leetcode.com/u/dj1ch/",
+    name: "Leetcode",
+    icon: Simple.IconLeetcode,
+  },
+  {
+    href: "https://www.codecademy.com/profiles/dj1ch",
+    name: "Codecademy",
+    icon: Simple.IconCodecademy,
+  },
 ];
 
 export default () => {
