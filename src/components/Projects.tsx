@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: "ieee802154-sniffer",
-    description: "and yet another proof of concept sniffer using the IEEE 802.15.4 standard"
+    description: "and yet another proof of concept sniffer using the IEEE 802.15.4 standard",
     icon: Lucide.IconImage,
     url: "https://github.com/dj1ch/ieee802154-sniffer",
   },
