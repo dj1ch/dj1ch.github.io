@@ -17,10 +17,16 @@ const projects = [
     url: "https://github.com/dj1ch/minigotchi-esp32",
   },
   {
+    title: "ieee802154-sniffer",
+    description: "and yet another proof of concept sniffer using the IEEE 802.15.4 standard"
+    icon: Lucide.IconImage,
+    url: "https://github.com/dj1ch/ieee802154-sniffer",
+  },
+  {
     title: "esp32c6-sniffer",
     description: "a proof of concept ESP32C6 sniffer",
     icon: Lucide.IconImage,
-    url: "https://github.com/dj1ch/mesp32c6-sniffer",
+    url: "https://github.com/dj1ch/esp32c6-sniffer",
   },
   {
     title: "openhaystack-esp32",
