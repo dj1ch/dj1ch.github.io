@@ -8,6 +8,16 @@ const socials = [
     name: "GitHub",
     icon: Simple.IconGitHub,
   },
+  {
+    href: "https://instagram.com/dj2ch",
+    name: "Instagram",
+    icon: Simple.IconInstagram,
+  },
+  {
+    href: "https://app.daily.dev/dj1ch",
+    name: "Daily.dev",
+    icon: Simple.IconDailyDev,
+  },
 ];
 
 export default () => {
