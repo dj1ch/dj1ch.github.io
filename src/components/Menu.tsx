@@ -7,7 +7,7 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
