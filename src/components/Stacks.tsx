@@ -5,40 +5,16 @@ import { Lucide, Simple } from "./icons";
 // TODO : update stacks
 const stacks = [
   {
-    name: "Figma",
-    category: "Design",
-    icon: Simple.IconFigma,
-    url: "https://www.figma.com",
+    name: "Arduino",
+    category: "Development",
+    icon: Simple.IconArduino,
+    url: "https://www.arduino.cc/",
   },
   {
-    name: "Framer",
-    category: "Design",
-    icon: Simple.IconFramer,
-    url: "https://www.framer.com",
-  },
-  {
-    name: "Rive",
-    category: "Design",
-    icon: Simple.IconRive,
-    url: "https://rive.app",
-  },
-  {
-    name: "Arc",
-    category: "Browser",
-    icon: Simple.IconArc,
-    url: "https://arc.net",
-  },
-  {
-    name: "Notion",
-    category: "Productivity",
-    icon: Simple.IconNotion,
-    url: "https://www.notion.so",
-  },
-  {
-    name: "Calendly",
-    category: "Calendar",
-    icon: Simple.IconCalendly,
-    url: "https://calendly.com",
+    name: "ESP-IDF",
+    category: "Development",
+    icon: Simple.IconEspressif,
+    url: "https://www.espressif.com/",
   },
 ];
 

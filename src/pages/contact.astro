@@ -1,0 +1,26 @@
+---
+import MainLayout from "~/layouts/MainLayout.astro";
+
+import { Separator } from "~/components/ui";
+
+import DevelopedBy from "~/components/DevelopedBy.tsx";
+import Bar from "~/components/Bar.tsx";
+import ContactForm from "~/components/Contact.tsx"
+import Menu from "~/components/Menu.tsx";
+---
+
+<MainLayout>
+  <main class="container p-3 mx-auto max-w-screen-sm min-h-dvh">
+    <Bar client:idle />
+
+    <Separator className="my-8" />
+
+    <Menu title="Contact" client:idle>
+        <ContactForm client:idle />
+    </Menu>
+
+    <Separator className="my-8" />
+
+    <DevelopedBy />
+  </main>
+</MainLayout>
