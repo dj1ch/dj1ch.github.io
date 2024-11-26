@@ -1,6 +1,7 @@
 ---
 import HTML from "~/components/HTML.astro";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
+import Analytics from '@vercel/analytics/astro'
 
 type Props = {
   title?: string;
@@ -12,6 +13,7 @@ const { title, description } = Astro.props;
 
 <HTML {title} {description}>
   <SpeedInsights/>
+  <Analytics/>
   <Fragment slot="body">
     <slot />
   </Fragment>
