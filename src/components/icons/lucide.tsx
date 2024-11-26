@@ -80,3 +80,70 @@ export const IconUser = create(
     <circle cx="12" cy="7" r="4" />
   </>
 );
+
+export const IconWifi = create(
+  <>
+    <path d="M12 20h.01"/>
+    <path d="M2 8.82a15 15 0 0 1 20 0"/>
+    <path d="M5 12.859a10 10 0 0 1 14 0"/>
+    <path d="M8.5 16.429a5 5 0 0 1 7 0"/>
+  </>
+);
+
+export const IconRouter = create(
+  <>
+    <rect width="20" height="8" x="2" y="14" rx="2"/>
+    <path d="M6.01 18H6"/>
+    <path d="M10.01 18H10"/>
+    <path d="M15 10v4"/>
+    <path d="M17.84 7.17a4 4 0 0 0-5.66 0"/>
+    <path d="M20.66 4.34a8 8 0 0 0-11.31 0"/>
+  </>
+);
+
+export const IconKnife = create(
+  <>
+    <path d="M3 2v1c0 1 2 1 2 2S3 6 3 7s2 1 2 2-2 1-2 2 2 1 2 2"/>
+    <path d="M18 6h.01"/>
+    <path d="M6 18h.01"/>
+    <path d="M20.83 8.83a4 4 0 0 0-5.66-5.66l-12 12a4 4 0 1 0 5.66 5.66Z"/>
+    <path d="M18 11.66V22a4 4 0 0 0 4-4V6"/>
+  </>
+);
+
+export const IconDatabase = create(
+  <>
+    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+    <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
+    <path d="M3 12A9 3 0 0 0 21 12"/>
+  </>
+);
+
+export const IconGps = create(
+  <>
+    <line x1="2" x2="5" y1="12" y2="12"/>
+    <line x1="19" x2="22" y1="12" y2="12"/>
+    <line x1="12" x2="12" y1="2" y2="5"/>
+    <line x1="12" x2="12" y1="19" y2="22"/>
+    <circle cx="12" cy="12" r="7"/>
+    <circle cx="12" cy="12" r="3"/>
+  </>
+);
+
+export const IconPot = create(
+  <>
+    <path d="M2 12h20"/>
+    <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/>
+    <path d="m4 8 16-4"/>
+    <path d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8"/>
+  </>
+);
+
+export const IconNfc = create(
+  <>
+    <rect width="7" height="12" x="2" y="6" rx="1"/>
+    <path d="M13 8.32a7.43 7.43 0 0 1 0 7.36"/>
+    <path d="M16.46 6.21a11.76 11.76 0 0 1 0 11.58"/>
+    <path d="M19.91 4.1a15.91 15.91 0 0 1 .01 15.8"/>
+  </>
+);
