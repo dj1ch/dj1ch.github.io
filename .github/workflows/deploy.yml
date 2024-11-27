@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ./dist
+          path: .vercel/output
 
   deploy-github-pages:
     needs: build
