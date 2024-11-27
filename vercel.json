@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": ".vercel/output/static/**/*.js",
+        "src": ".vercel/output/static/_astro/*.js",
         "use": "@vercel/node",
         "config": {
           "runtime": "node18"
