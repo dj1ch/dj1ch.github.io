@@ -34,7 +34,5 @@ export default defineConfig({
     react(),
   ],
   
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(),
 });
