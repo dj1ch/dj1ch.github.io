@@ -1,7 +1,5 @@
 ---
 import type { HTMLAttributes } from "astro/types";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
-import Analytics from '@vercel/analytics/astro'
 
 import "~/styles/globals.ts";
 
@@ -38,8 +36,6 @@ const {
     />
 
     <slot name="head" />
-    <SpeedInsights/>
-    <Analytics/>
   </head>
   <body>
     <slot name="body" />
