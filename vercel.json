@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "dist/server/pages/*.mjs",
+        "src": "dist/",
         "use": "@vercel/node",
         "config": {
           "runtime": "node18"
