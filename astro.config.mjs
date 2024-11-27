@@ -4,8 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 import react from "@astrojs/react";
 
-import vercel from '@astrojs/vercel/serverless';
-// import node from '@astrojs/node';
+import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   output: 'server',
@@ -34,5 +33,5 @@ export default defineConfig({
     react(),
   ],
   
-  adapter: vercel(),
+  adapter: cloudflare(),
 });
