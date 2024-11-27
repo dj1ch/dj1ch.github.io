@@ -29,7 +29,7 @@ jobs:
         run: |
           npm install  # Or use 'yarn install' if using Yarn
 
-      # Step 4: Build the Astro site
+      # Step 4: Build the site
       - name: Build the site
         run: npm run build  # Or 'astro build' directly if you want to use Astro CLI
 
@@ -37,7 +37,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Adjust to the actual directory your site is built into
+          path: .vercel/output/static  # Change to the correct directory for Astro Vercel output
 
   deploy:
     needs: build
