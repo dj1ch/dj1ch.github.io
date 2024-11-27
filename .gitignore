@@ -4,6 +4,7 @@ dist/
 # generated types
 .astro/
 .vercel/
+.wrangler/
 nvm
 
 # dependencies
@@ -22,3 +23,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 .vercel
+
+# configs
+wrangler.toml
