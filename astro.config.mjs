@@ -8,6 +8,9 @@ import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
   output: 'server',
+  buildOptions: {
+    out: './dist',
+  },
 
   experimental: {
     env: {
