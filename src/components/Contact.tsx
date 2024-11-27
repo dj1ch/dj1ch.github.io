@@ -6,27 +6,37 @@ const ContactForm: React.FC = () => {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<string | null>(null);
 
-  const webhookURL = import.meta.env.VITE_ASTRO_WEBHOOK_URL?.toString() || "https://discord.com/api/webhooks/1164589281772310588/--yzEwJ8ydf0WYENe9sQ-mgBr3q8do5a4ddUKXNPo7rjUUzsrvqo61c9CJlA24erP9N2";
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (!subject || !email || !message) {
       setStatus('Please fill in all the required fields.');
       return;
     }
-
-    const content = `**Email:** ${email}\n**Subject:** ${subject}\n\n**Message:**\n${message}`;
-
-    fetch(webhookURL, {
+  
+    const content = { email, subject, message };
+    console.log('Sending content:', content);
+  
+    try {
+      const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ content: content }),
-    })
-    console.log(webhookURL);
+        body: JSON.stringify(content),
+      });
+  
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+      } else {
+        const error = await response.text();
+        setStatus(`Error: ${error}`);
+      }
+    } catch (error) {
+      setStatus(`Error: ${error.message}`);
+    }
   };
+  
 
   return (
     <div className="contact-form max-w-md mx-auto mt-8 p-6 bg-neutral-2 rounded-2xl">

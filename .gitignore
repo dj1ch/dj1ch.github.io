@@ -1,7 +1,9 @@
 # build output
 dist/
+
 # generated types
 .astro/
+.vercel/
 
 # dependencies
 node_modules/
