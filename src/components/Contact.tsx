@@ -33,7 +33,10 @@ const ContactForm: React.FC = () => {
         setStatus(`Error: ${error}`);
       }
     } catch (error) {
-      setStatus(`Error: ${error.message}`);
+      if (error instanceof Error) {
+        // Handle generic errors
+        console.error(error.message);
+      }
     }
   };
   
