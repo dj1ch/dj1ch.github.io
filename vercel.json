@@ -1,3 +1,11 @@
 {
-    
-}
+    "builds": [
+      {
+        "src": ".vercel/output/static/**/*.js",
+        "use": "@vercel/node",
+        "config": {
+          "runtime": "node18"
+        }
+      }
+    ]
+  }
