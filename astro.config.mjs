@@ -13,8 +13,9 @@ export default defineConfig({
     out: './dist',
   },
 
+  base: 'dj1ch.github.io',
+
   experimental: {
-    base: 'dj1ch.github.io',
     env: {
       schema: {
         SECRET_WEBHOOK_URL: envField.string({
