@@ -13,7 +13,7 @@ export default defineConfig({
     out: './dist',
   },
 
-  base: process.env.CONTEXT === 'production' ? '/dj1ch.github.io/' : '/',
+  base: '',
 
   experimental: {
     env: {
