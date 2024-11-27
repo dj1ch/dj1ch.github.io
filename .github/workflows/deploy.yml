@@ -37,7 +37,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Change to the correct directory for Astro Vercel output
+          path: dist/client  # Change to the correct directory for Astro Vercel output
 
   deploy:
     needs: build
