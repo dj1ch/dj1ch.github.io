@@ -1,11 +1,12 @@
 {
-    "builds": [
-      {
-        "src": "dist/",
-        "use": "@vercel/node",
-        "config": {
-          "runtime": "node18"
-        }
-      }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "env": {
+    "NODE_VERSION": "18"
   }
+}
