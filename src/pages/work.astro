@@ -5,6 +5,8 @@ import { Separator } from "~/components/ui";
 
 import DevelopedBy from "~/components/DevelopedBy.tsx";
 import Bar from "~/components/Bar.tsx";
+import Menu from "~/components/Menu.tsx";
+import WorkExperience from "~/components/Work.tsx"
 ---
 
 <MainLayout>
@@ -13,7 +15,9 @@ import Bar from "~/components/Bar.tsx";
 
     <Separator className="my-8" />
 
-    <p>Still a WIP!</p>
+    <Menu title="Work Experience" client:idle>
+      <WorkExperience />
+    </Menu>
 
     <Separator className="my-8" />
 

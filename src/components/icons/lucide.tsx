@@ -164,3 +164,30 @@ export const IconHouse = create(
     <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
   </>
 );
+
+export const IconChip = create(
+  <>
+    <path d="M18 12h2"/>
+    <path d="M18 16h2"/>
+    <path d="M18 20h2"/>
+    <path d="M18 4h2"/>
+    <path d="M18 8h2"/>
+    <path d="M4 12h2"/>
+    <path d="M4 16h2"/>
+    <path d="M4 20h2"/>
+    <path d="M4 4h2"/>
+    <path d="M4 8h2"/>
+    <path d="M8 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1.5c-.276 0-.494.227-.562.495a2 2 0 0 1-3.876 0C9.994 2.227 9.776 2 9.5 2z"/>
+  </>
+);
+
+export const IconNotebook = create(
+  <>
+    <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/>
+    <path d="M2 6h4"/>
+    <path d="M2 10h4"/>
+    <path d="M2 14h4"/>
+    <path d="M2 18h4"/>
+    <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/>
+  </>
+);
