@@ -17,6 +17,12 @@ const projects = [
     url: "https://github.com/dj1ch/minigotchi-esp32",
   },
   {
+    title: "HomeNet",
+    description: "Decentralized, secure, in-the-home communication with IoT devices.",
+    icon: Lucide.IconOtherHouse,
+    url: "https://github.com/dj1ch/HomeNet",
+  },
+  {
     title: "ieee802154-sniffer",
     description: "and yet another proof of concept sniffer using the IEEE 802.15.4 standard",
     icon: Lucide.IconWifi,
